@@ -1,5 +1,0 @@
-After your workspace is built and sourced:
-
-rosrun teraranger one _portname:=/dev/ttyACM0
-
-seeing availible ports: ls /dev/tty*
