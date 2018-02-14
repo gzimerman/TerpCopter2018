@@ -1,0 +1,13 @@
+After your workspace is built and sourced:
+
+rosrun teraranger one _portname:=/dev/ttyACM0
+
+seeing availible ports: ls /dev/tty*
+
+in the terminal you run it in, you may get the following error:
+[ERROR] [1518579060.318374119]: Timeout or error while reading serial
+
+not sure why, but
+
+if you: rostopic echo /teraranger_one
+you should still see the data stream
