@@ -9,7 +9,7 @@ project(tera_detect)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS 
  roscpp
- mavros_msgs
+## mavros_msgs
  std_msgs
  message_generation
  geometry_msgs
@@ -150,16 +150,9 @@ include_directories(
 
 add_executable(tera_detect tera_node.cpp)
 
-#add_dependencies(your_program ${catkin_EXPORTED_TARGETS})
-
 add_dependencies(tera_detect ${tera_detect_EXPORTED_TARGETS})
 
-#add_dependencies(tera_detect tera_detect_msgs_generate_messages_cpp my_package_generate_messages_cpp)
-
 target_link_libraries(tera_detect ${catkin_LIBRARIES})
-
-#add_dependencies(tera_node ${catkin_EXPORTED_TARGETS})
-
 
 
 ## Rename C++ executable without prefix
